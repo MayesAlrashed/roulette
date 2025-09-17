@@ -8,14 +8,29 @@ int guess= Convert.ToInt32(input);
 
 
 //List<int> list=new List<int>();
-Random rand = new Random();
-int randNumb =rand.Next(1,4);
+Console.WriteLine("press enter to start");
+Console.ReadLine();  
 
-if (randNumb ==guess)
+while(true)
 {
-    Console.WriteLine("You won " + 2*bet);
-} else
-{
-    Console.WriteLine("You lost");
+    Random rand = new Random();
+    int randNumb = rand.Next(1, 101);
+
+
+    if (randNumb == guess)
+    {
+        Console.WriteLine("You won " + 2 * bet);
+    }
+    else
+    {
+        Console.WriteLine("You lost");
+    }
+    Console.WriteLine("Do you want to play again?");
+    string answer= Console.ReadLine();
+
+    if (answer == "no")
+    {
+        break;
+    }
 }
 
