@@ -2,6 +2,7 @@
 string money=Console.ReadLine();
 int bet=Convert.ToInt32(money);
 int guess = -1;
+
 while (guess < 0 || guess > 100)
 {
     Console.WriteLine("Enter the number you want to bet on");
